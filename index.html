@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Name — Robotics Engineer</title>
+    <meta name="description" content="Building intelligent drones and mobile robots that explore and interact with the world.">
+    <meta name="theme-color" content="#0ea5e9">
+    <meta property="og:title" content="Your Name — Robotics Engineer">
+    <meta property="og:description" content="Building intelligent drones and mobile robots that explore and interact with the world.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT: '#0ea5e9', dark: '#0284c7', light: '#7dd3fc' } } } } };</script>
+    <style>html { scroll-behavior: smooth; }</style>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 selection:bg-brand/30 selection:text-white">
+    <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60 border-b border-white/5">
+      <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-2 font-semibold tracking-tight">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-brand/20 text-brand">🤖</span>
+          <span class="text-slate-100">Your Name</span>
+        </a>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded px-3 py-2 text-slate-300 hover:text-white hover:bg-white/5" aria-label="Open menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div id="menu" class="hidden md:flex items-center gap-6">
+          <a href="#about" class="text-sm text-slate-300 hover:text-white">About</a>
+          <a href="#projects" class="text-sm text-slate-300 hover:text-white">Projects</a>
+          <a href="#contact" class="text-sm text-slate-300 hover:text-white">Contact</a>
+          <a href="#contact" class="hidden sm:inline-flex rounded-md bg-brand px-3 py-2 text-sm font-medium text-slate-950 hover:bg-brand-dark">Get in touch</a>
+        </div>
+      </nav>
+      <div id="menuMobile" class="md:hidden hidden border-t border-white/5">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-2">
+          <a href="#about" class="py-1 text-slate-300 hover:text-white">About</a>
+          <a href="#projects" class="py-1 text-slate-300 hover:text-white">Projects</a>
+          <a href="#contact" class="py-1 text-slate-300 hover:text-white">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home" class="relative">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 -top-24 -z-10 blur-3xl">
+        <div class="mx-auto h-72 max-w-2xl rotate-6 bg-gradient-to-tr from-brand/30 via-indigo-500/20 to-fuchsia-500/20 opacity-40" style="clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);"></div>
+      </div>
+
+      <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-24 pb-20 text-center">
+        <p class="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span> Available for collaborations
+        </p>
+        <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Your Name</h1>
+        <p class="mt-3 text-lg font-medium text-brand">Robotics Engineer</p>
+        <p class="mt-5 text-slate-300 max-w-2xl mx-auto">
+          Building intelligent drones and mobile robots that explore and interact with the world.
+        </p>
+        <div class="mt-8 flex items-center justify-center gap-3">
+          <a href="#projects" class="rounded-md bg-brand px-4 py-2.5 text-sm font-semibold text-slate-950 hover:bg-brand-dark">See projects</a>
+          <a href="#contact" class="rounded-md border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/10">Contact</a>
+        </div>
+      </section>
+
+      <section id="about" class="scroll-mt-24 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold text-white">About Me</h2>
+          </div>
+          <div class="md:col-span-3 text-slate-300 leading-relaxed">
+            <p>I am a Robotics Engineer specializing in aerial and ground autonomy. My work spans state estimation, SLAM, motion planning, and real-time embedded systems for drones and mobile robots.</p>
+            <p class="mt-4">I enjoy taking ideas from simulation to the field — integrating perception, control, and robust software to build systems that operate reliably in the real world.</p>
+            <p class="mt-4">I work primarily with ROS/ROS 2, PX4/ArduPilot, C++/Python, and modern tooling for simulation and testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="scroll-mt-24 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <h2 class="text-2xl font-bold text-white">Projects</h2>
+          <a href="#contact" class="text-sm text-brand hover:text-brand-light">Propose a collaboration →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:border-brand/40 transition">
+            <div class="aspect-video rounded-lg bg-gradient-to-br from-brand/20 to-indigo-500/20 flex items-center justify-center text-5xl">🚁</div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Autonomous Drone Navigation</h3>
+            <p class="mt-2 text-sm text-slate-300">Visual-inertial odometry and local planning for GPS-denied flight in indoor environments.</p>
+            <div class="mt-3 flex gap-2 text-xs text-slate-400">
+              <span class="rounded bg-white/5 px-2 py-1">ROS 2</span>
+              <span class="rounded bg-white/5 px-2 py-1">PX4</span>
+              <span class="rounded bg-white/5 px-2 py-1">C++</span>
+            </div>
+            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm text-brand hover:text-brand-light">View project <span aria-hidden>→</span></a>
+          </article>
+
+          <article class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:border-brand/40 transition">
+            <div class="aspect-video rounded-lg bg-gradient-to-br from-emerald-400/20 to-cyan-400/20 flex items-center justify-center text-5xl">🤖</div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Mobile Robot Exploration</h3>
+            <p class="mt-2 text-sm text-slate-300">Frontier-based exploration with 2D/3D mapping and obstacle-aware path planning.</p>
+            <div class="mt-3 flex gap-2 text-xs text-slate-400">
+              <span class="rounded bg-white/5 px-2 py-1">ROS</span>
+              <span class="rounded bg-white/5 px-2 py-1">SLAM</span>
+              <span class="rounded bg-white/5 px-2 py-1">Python</span>
+            </div>
+            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm text-brand hover:text-brand-light">View project <span aria-hidden>→</span></a>
+          </article>
+
+          <article class="group rounded-xl border border-white/10 bg-white/5 p-4 hover:border-brand/40 transition">
+            <div class="aspect-video rounded-lg bg-gradient-to-br from-fuchsia-400/20 to-rose-400/20 flex items-center justify-center text-5xl">🛰️</div>
+            <h3 class="mt-4 text-lg font-semibold text-white">Multi-Robot Coordination</h3>
+            <p class="mt-2 text-sm text-slate-300">Distributed task allocation and formation control for heterogeneous robot teams.</p>
+            <div class="mt-3 flex gap-2 text-xs text-slate-400">
+              <span class="rounded bg-white/5 px-2 py-1">C++</span>
+              <span class="rounded bg-white/5 px-2 py-1">Optimization</span>
+              <span class="rounded bg-white/5 px-2 py-1">Gazebo</span>
+            </div>
+            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm text-brand hover:text-brand-light">View project <span aria-hidden>→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-24 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold text-white">Contact</h2>
+          </div>
+          <div class="md:col-span-3">
+            <p class="text-slate-300">I’m open to collaborations, consulting, and exciting robotics projects.</p>
+            <ul class="mt-4 space-y-2 text-slate-300">
+              <li>
+                <a class="inline-flex items-center gap-2 hover:text-white" href="mailto:you@example.com">
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded bg-white/5">✉️</span>
+                  you@example.com
+                </a>
+              </li>
+              <li>
+                <a class="inline-flex items-center gap-2 hover:text-white" href="https://github.com/yourusername" target="_blank" rel="noreferrer noopener">
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded bg-white/5">🐙</span>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a class="inline-flex items-center gap-2 hover:text-white" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer noopener">
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded bg-white/5">🔗</span>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a class="inline-flex items-center gap-2 hover:text-white" href="https://twitter.com/yourusername" target="_blank" rel="noreferrer noopener">
+                  <span class="inline-flex h-6 w-6 items-center justify-center rounded bg-white/5">🐦</span>
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/5 py-8">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#home" class="hover:text-slate-200">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const menuMobile = document.getElementById('menuMobile');
+      menuBtn?.addEventListener('click', () => {
+        const isOpen = !menuMobile.classList.contains('hidden');
+        if (isOpen) {
+          menuMobile.classList.add('hidden');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          menuMobile.classList.remove('hidden');
+          menuBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
